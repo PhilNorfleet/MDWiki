@@ -1,0 +1,5 @@
+<h1><%= @user.name || @user.email %></h1>
+<h2>
+<%= render partial: @wikis, locals: {user: @user, item: @wiki} %>
+<%= link_to "New Wiki", new_wiki_path %>
+</h2>
